@@ -1,4 +1,4 @@
-<form class="workout-form">
+<form [formGroup]="workoutForm" class="workout-form">
   <h2 class="secondary-heading">Create a new workout</h2>
   <div class="workout-form-field">
     <label class="workout-form-label" for="workout-name">Workout Name:</label>
@@ -7,6 +7,7 @@
       id="workout-name"
       type="text"
       placeholder="What is this workout called"
+      formControlName="workoutName"
     />
   </div>
   <div class="workout-form-type-field">
@@ -18,7 +19,7 @@
           class="workout-form-input-radio"
           type="radio"
           id="resistance"
-          name="workoutType"
+          formControlName="workoutType"
           value="resistance"
           checked
         />
@@ -29,7 +30,7 @@
           class="workout-form-input-radio"
           type="radio"
           id="cardio"
-          name="workoutType"
+          formControlName="workoutType"
           value="cardio"
         />
       </div>
