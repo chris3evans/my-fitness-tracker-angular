@@ -1,0 +1,38 @@
+<form class="workout-form">
+  <div class="workout-form-field">
+    <label class="workout-form-label" for="workout-name">Workout Name:</label>
+    <input
+      class="workout-form-input-text"
+      id="workout-name"
+      type="text"
+      placeholder="What is this workout called"
+    />
+  </div>
+  <div class="workout-form-type-field">
+    <h2 class="secondary-heading">Select Type Of Workout</h2>
+    <div class="workout-form-field">
+      <label class="workout-form-label" for="resistance">Resistance</label>
+      <input
+        class="workout-form-input-radio"
+        type="radio"
+        id="resistance"
+        name="workoutType"
+        value="resistance"
+        checked
+      />
+    </div>
+    <div class="workout-form-field">
+      <label class="workout-form-label" for="cardio">Cardio</label>
+      <input
+        class="workout-form-input-radio"
+        type="radio"
+        id="cardio"
+        name="workoutType"
+        value="cardio"
+      />
+    </div>
+  </div>
+  <div class="workout-form-button-container">
+    <button class="cta-btn" type="submit">Save</button>
+  </div>
+</form>

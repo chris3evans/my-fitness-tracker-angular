@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { WorkoutsViewComponent } from './workouts-view/workouts-view.component';
+import { WorkoutFormComponent } from './workout-form/workout-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WorkoutsViewComponent
+    WorkoutsViewComponent,
+    WorkoutFormComponent
   ],
   imports: [
     BrowserModule
