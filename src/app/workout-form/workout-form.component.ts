@@ -18,4 +18,8 @@ export class WorkoutFormComponent {
       console.log(result);
     });
   }
+
+  handleSubmit() {
+    console.log(this.workoutForm.value);
+  }
 }

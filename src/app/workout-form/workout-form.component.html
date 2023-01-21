@@ -1,4 +1,8 @@
-<form [formGroup]="workoutForm" class="workout-form">
+<form
+  [formGroup]="workoutForm"
+  class="workout-form"
+  (ngSubmit)="handleSubmit()"
+>
   <h2 class="secondary-heading">Create a new workout</h2>
   <div class="workout-form-field">
     <label class="workout-form-label" for="workout-name">Workout Name:</label>
