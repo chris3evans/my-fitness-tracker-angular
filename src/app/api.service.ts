@@ -9,7 +9,7 @@ export class ApiService {
 
   rootUrl = 'http://localhost:4000';
 
-  postWorkout() {
-    return this.http.post(`${this.rootUrl}/workouts`);
+  postWorkout(data: any) {
+    return this.http.post<any>(`${this.rootUrl}/workouts`, data);
   }
 }
